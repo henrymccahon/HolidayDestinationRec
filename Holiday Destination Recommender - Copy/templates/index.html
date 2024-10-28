@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Destination Recommender</title>
+</head>
+<body>
+    <h1>Holiday Destination Recommender</h1>
+    <form action="/recommend" method="post">
+        <label for="type">Type of destination:</label>
+        <select name="type" id="type">
+            <option value="beach">Beach</option>
+            <option value="culture">Culture</option>
+            <option value="city">City</option>
+        </select><br><br>
+
+        <label for="temperature">Preferred temperature:</label>
+        <select name="temperature" id="temperature">
+            <option value="cold">Cold</option>
+            <option value="mild">Mild</option>
+            <option value="hot">Hot</option>
+        </select><br><br>
+
+        <label for="activities">Preferred activities:</label>
+        <select name="activities" id="activities">
+            <option value="relaxation">Relaxation</option>
+            <option value="shopping">Shopping</option>
+            <option value="sightseeing">Sightseeing</option>
+            <option value="adventure/sport">Adventure/Sport</option>
+        </select><br><br>
+
+        <label for="flight_time">Preferred flight time:</label>
+        <select name="flight_time" id="flight_time">
+            <option value="less than 10">Less than 10 hours</option>
+            <option value="between 10 - 17">Between 10 - 17 hours</option>
+            <option value="above 17">Above 17 hours</option>
+        </select><br><br>
+
+        <button type="submit">Get Recommendation</button>
+    </form>
+</body>
+</html>
